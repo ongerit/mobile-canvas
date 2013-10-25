@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Courses.juilliard.edu--Juilliard's open-source learning management system">
     <meta name="author" content="The Juilliard School | Information Technology">
 
     <title>Canvas App</title>
-<link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Add custom CSS here -->
     <style>
-	body {margin-top: 10px;}
-	</style>
+    body {
+        margin-top: 180px;
+    }
+    </style>
 
-  </head>
+</head>
 <script language=javascript>
-function canvas_redirect ()
-{
-if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
-location.replace('ios.html');
-}
-if (navigator.userAgent.indexOf('Android') != -1) {
-location.replace('android.html');
-}
+function canvas_redirect() {
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
+        location.replace('ios.html');
+    }
+    if (navigator.userAgent.indexOf('Android') != -1) {
+        location.replace('android.html');
+    }
 
 }
-function canvas_redirect_app ()
-{
-<!--
 
-if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
-location.replace(' https://itunes.apple.com/us/app/canvas-by-instructure/id688577349?mt=8&uo=4 ');
-}
-var ua = navigator.userAgent.toLowercase();
-if (ua.indexOf('Android') != -1) {
-location.replace(' https://play.google.com/store/apps/details?id=com.instructure.candroid ');
-}
-//-->
+function canvas_redirect_app() {
+    <!--
+
+    if (navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/iPad/i)) {
+        location.replace(' https://itunes.apple.com/us/app/canvas-by-instructure/id688577349?mt=8&uo=4 ');
+    }
+    var ua = navigator.userAgent.toLowercase();
+    if (ua.indexOf('Android') != -1) {
+        location.replace(' https://play.google.com/store/apps/details?id=com.instructure.candroid ');
+    }
+    //-->
 }
 </script>
-  <body onLoad='javascript:canvas_redirect()'>
 
+<body onLoad='javascript:canvas_redirect()'>
+    <div class="container">
+
+        <div class="row">
+            <div class=".col-md-9 .col-md-push-3 text-center">
+
+                <p>
+                    <img src="images/load.gif" alt="loading">
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    <!--
 
     <div class="container">
 
@@ -55,5 +71,7 @@ location.replace(' https://play.google.com/store/apps/details?id=com.instructure
       </div>
 
     </div>
-  </body>
+-->
+</body>
+
 </html>
